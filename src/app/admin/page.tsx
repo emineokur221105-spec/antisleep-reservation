@@ -36,18 +36,7 @@ type Reservation = {
 
 const TODAY = new Date().toISOString().slice(0, 10);
 
-const MOCK_RESERVATIONS: Reservation[] = [
-  { id: 1, date: TODAY, time: "20:00", durationSlots: 1, table: "T1", takenBy: "Kabe", name: "小明", phone: "0912-345-678", partySize: 1 },
-  { id: 2, date: TODAY, time: "20:00", durationSlots: 2, table: "T9", takenBy: "Kabe", name: "Anna", phone: "0987-654-321", partySize: 4, notes: "慶生 4 小時" },
-  { id: 3, date: TODAY, time: "22:00", durationSlots: 2, table: "T13", takenBy: "Lily", name: "John", phone: "0911-222-333", partySize: 6, notes: "預計 4 小時" },
-  { id: 4, date: TODAY, time: "20:00", durationSlots: 1, table: "T3", takenBy: "Kabe", name: "Vivian", phone: "0922-111-000", partySize: 1 },
-  { id: 5, date: TODAY, time: "22:00", durationSlots: 1, table: "T10", takenBy: "Lily", name: "Mike", phone: "0966-888-999", partySize: 3, notes: "對堅果過敏" },
-  { id: 6, date: TODAY, time: "00:00", durationSlots: 1, table: "T14", takenBy: "Sam", name: "Iris", phone: "0933-555-444", partySize: 5 },
-  // 同一桌不同人示範
-  { id: 7, date: TODAY, time: "22:00", durationSlots: 1, table: "T1", takenBy: "Sam", name: "Tina", phone: "0955-111-222", partySize: 1 },
-  { id: 8, date: TODAY, time: "20:00", durationSlots: 1, table: "T10", takenBy: "Kabe", name: "Sarah", phone: "0918-333-444", partySize: 2 },
-  { id: 9, date: TODAY, time: "00:00", durationSlots: 1, table: "T3", takenBy: "Lily", name: "Mark", phone: "0972-555-666", partySize: 1 },
-];
+const MOCK_RESERVATIONS: Reservation[] = [];
 
 type ParsedFields = {
   date?: string;
