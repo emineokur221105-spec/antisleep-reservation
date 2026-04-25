@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0c;
+  --background-elevated: #16161a;
+  --foreground: #f5f5f0;
+  --foreground-muted: #888888;
+  --accent: #d4b896;
+  --accent-blue: #5b6f8a;
+  --border: #2a2a2e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-elevated: var(--background-elevated);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-blue: var(--accent-blue);
+  --color-border: var(--border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  /* iOS safe area (notch / home indicator) */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+/* Inputs: 16px+ font-size to prevent iOS auto-zoom on focus */
+input,
+textarea,
+select {
+  font-size: 16px;
+}

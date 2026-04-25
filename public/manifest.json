@@ -1,0 +1,18 @@
+{
+  "name": "anti sleep ™ Club｜訂位",
+  "short_name": "anti sleep",
+  "description": "anti sleep Club Taipei 內部訂位系統",
+  "start_url": "/admin",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
