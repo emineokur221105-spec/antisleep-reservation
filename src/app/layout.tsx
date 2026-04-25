@@ -12,10 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   title: "anti sleep ™ Club｜訂位",
   description: "anti sleep Club Taipei 內部訂位系統",
-  manifest: "/manifest.json",
   applicationName: "anti sleep",
   appleWebApp: {
     capable: true,
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: `${basePath}/icon.svg`,
+    apple: `${basePath}/icon.svg`,
   },
   formatDetection: {
     telephone: false,
